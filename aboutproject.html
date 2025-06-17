@@ -1,109 +1,203 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <title>About Project</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>O Projekcie - ZPI</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      background-color: #1e1e1e;
-      color: #fff;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .section-title {
-      text-align: center;
-      margin: 2rem 0;
-      font-size: 3rem;
-      color: #bcbcbc;
-    }
-    .about-block {
-      margin-bottom: 4rem;
-    }
-    .about-img {
-      width: 100%;
-      border-radius: 12px;
-    }
-    .text-box {
-      padding: 1.5rem;
-    }
-    footer {
-      background-color: #111;
-      color: #aaa;
-    }
-  </style>
+  <!-- you can change the website icon by change the href link -->
+  <link rel="icon" type="image/png" href="./img/logo_mimao.png">
+
+
+
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="./css/coloring.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" type="text/css" href="./css/txtformatting.css">
+  <link rel="stylesheet" type="text/css" href="./css/shadow.css">
+  <link rel="stylesheet" type="text/css" href="./css/loading.css">
+  <link rel="stylesheet" type="text/css" href="./css/cursor.css">
+  <link rel="stylesheet" type="text/css" href="./css/load.scss">
+  <!-- css end -->
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body class="on">
+  <div class="loading" id="loading-box">
+    <div class="device">
+      <div class="device__a">
+        <div class="device__a-1"></div>
+        <div class="device__a-2"></div>
+      </div>
+      <div class="device__b"></div>
+      <div class="device__c"></div>
+      <div class="device__d"></div>
+      <div class="device__e"></div>
+      <div class="device__f"></div>
+      <div class="device__g"></div>
+    </div>
+    <!--div class="loading-item"><div class="loading-progress"></div></div-->
+  </div>
+  
+  <main class="main">
+    <!-- navbar -->
+    <div class="navbar">
+      <div class="container">
+        <div class="navbar-nav">
+          <div class="navbar-brand">
+            <!-- You can change it with Image if you want. -->
+            <span class="navbar-brand-txt"><a class="txt-bold type-1" >About Our Project</a></span>
+          </div>
+
+          <span class="navbar-toggler" id="toggler"><i onclick="toggleNavbar(this)" class="fas fa-bars"></i></span>
+
+          <div class="navs" id="navs">
+            <!-- You can change the href value and the text value -->
+            <div class="navs-item notbtn"><a href="/index.html" class="txt-uppercase">Strona Główna</a></div>
+            
+            <div class="navs-item"><a href="#"><button class="btn txt-uppercase shadow-sm">Test</button></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- navbar end -->		
+    <!-- jumbotron -->
+
+<style>
+   .space{
+    margin:100px;  
+    }
+    </style>
+  <!-- features -->
+   
+  <div class="features-box">
+    <h1 class="space"></h1>
+    <h1 class="features-t" id="features">Mimao – Aplikacja do nauki koncentracji w formie gry</h1>
+    <h1 class="space"></h1>
     <div class="container">
-      <a class="navbar-brand" href="index.html">ZPI</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Strona główna</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="o-projekcie.html">O Projekcie</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="czlonkowie.html">Członkowie</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="kontakt.html">Kontakt</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+      <div class="features">
+        
+        
+<div class="container py-5">
+  
 
-  <!-- Main Section -->
-  <div class="container py-5">
-    <h1 class="section-title">O naszym projekcie</h1>
+  <div class="row g-5 justify-content-center">
 
-    <div class="row about-block align-items-center">
-      <div class="col-md-6">
-        <img src="./img/feature1.png" alt="Ilustracja 1" class="about-img">
-      </div>
-      <div class="col-md-6 text-box">
-        <h2>Lorem ipsum dolor</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum neque non erat interdum, in pulvinar tortor euismod. Vestibulum euismod, sem ac accumsan aliquam, est erat elementum turpis.</p>
+    <!-- Problematyka -->
+    <div class="col-lg-10">
+      <div class="p-4 p-md-5 bg-dark text-white rounded-4 shadow-lg border-start border-4 border-info">
+        <h3 class="features-t" class="text-info mb-3"></i>Problematyka</h3>
+        
+        <p class="fs-5 lh-lg">
+          Współczesny styl życia, nadmiar bodźców i ciągły dostęp do technologii sprawiają, że coraz więcej osób ma trudność z utrzymaniem koncentracji.
+          Nawet proste zadania stają się wyzwaniem, gdy co chwilę odrywamy się od pracy, by sprawdzić telefon, powiadomienia lub media społecznościowe.
+          Wiele osób czuje, że traci kontrolę nad swoim czasem, odwleka obowiązki i ma trudności z budowaniem systematyczności i zdrowych nawyków.
+          Problem ten dotyczy zarówno młodzieży, jak i dorosłych, wpływając negatywnie na efektywność, samopoczucie i jakość życia.
+        </p>
       </div>
     </div>
 
-    <div class="row about-block align-items-center flex-md-row-reverse">
-      <div class="col-md-6">
-        <img src="./img/feature1.png" alt="Ilustracja 2" class="about-img">
-      </div>
-      <div class="col-md-6 text-box">
-        <h2>Lorem ipsum dolor sit amet</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at nulla vitae turpis efficitur tempor. Suspendisse potenti. Integer sed velit vitae nunc cursus rutrum.</p>
+    <!-- Cel projektu -->
+    <div class="col-lg-10">
+      <div class="p-4 p-md-5 bg-dark text-white rounded-4 shadow-lg border-start border-4 border-success">
+        <h3 class="features-t" class="text-success mb-3"></i>Cel projektu</h3>
+        
+        <p class="fs-5 lh-lg">
+          Celem aplikacji jest wspieranie użytkowników w budowaniu zdolności do koncentracji, samodyscypliny i skutecznego zarządzania czasem – w sposób lekki, przyjemny i motywujący.
+          Poprzez wprowadzenie grywalizacji i wizualnych postępów (rozwój pupila, nagrody, poziomy), aplikacja ma na celu pokazanie, że wykonywanie zadań wcale nie musi być nudne ani przytłaczające.
+          <strong>FocusPet</strong> uczy, że skupienie się choćby na krótki czas może przynieść wymierne rezultaty, a realizacja celów dziennych jest często prostsza, niż się wydaje.
+          Chcemy pomóc ludziom nie tylko lepiej pracować, ale także poczuć satysfakcję z codziennych działań i rozwijać się w wybranym przez siebie tempie.
+        </p>
       </div>
     </div>
 
-    <div class="row about-block align-items-center">
-      <div class="col-md-6">
-        <img src="./img/feature1.png" alt="Ilustracja 3" class="about-img">
-      </div>
-      <div class="col-md-6 text-box">
-        <h2>Dlaczego wybraliśmy ten temat?</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique, nulla vitae egestas lacinia, neque erat dictum urna, nec tincidunt arcu risus eu leo. Integer eget felis justo.</p>
+  </div>
+</div>
+
+
+        <div class="feature">
+          <img class="feature-img" src="./img/feature1.png"></img>
+          <div class="feature-info">
+            <h2 class="feature-info-t">Konto użytkownika</h2>
+            <li>Użytkownik posiada własne konto z dostępem do ustawień i statystyk.</li>
+            <li>W dolnym menu znajduje się zakładka konta, planów i strony głównej.</li>
+            <li>Możliwość wyboru i edycji typu planu (np. sportowy, naukowy, językowy, mieszany).</li>
+            <li>Strona startowa zawiera ogólne informacje i aktualizacje aplikacji.</li>
+          </div>
+        </div>
+        <div class="feature">
+          <img class="feature-img" src="./img/feature2.svg"></img>
+          <div class="feature-info">
+            <h2 class="feature-info-t">Tryby działania</h2>
+            <li>Tworzenie własnego planu dziennego z zadaniami.</li>
+            <li>Tryb skupienia: ustalany czas pracy z przerwami; po ukończeniu zadania wybór statusu:</li>
+            <li>✅ zadanie wykonane – pełna liczba punktów</li>
+            <li>❌ niewykonane – 0 punktów</li>
+            <li>↪️ częściowo – obniżony współczynnik punktów</li>
+            <li>System limitu: max. 100 punktów dziennie niezależnie od liczby zadań; im więcej zadań, tym mniej punktów za każde.</li>
+          </div>
+        </div>
+        <div class="feature">
+          <img class="feature-img" src="./img/feature3.svg"></img>
+          <div class="feature-info">
+            <h2 class="feature-info-t">Mechanika aplikacji</h2>
+            <li>Użytkownik wybiera swojego „pupila”: zwierzątko, roślinę, dom lub pojazd.</li>
+            <li>Pupil rozwija się od poziomu 1 do 30 w zależności od zdobywanych punktów.</li>
+            <li>Wraz z wyższym poziomem zmienia się wygląd lub forma pupila.</li>
+            <li>Na stronie głównej można dodać treści edukacyjne: techniki, filmy, nowinki.</li>
+            <li>System motywacyjny oparty na postępie wizualnym i nagrodach.</li>
+          </div>
+        </div>
+        
       </div>
     </div>
   </div>
+  <!-- features end -->
 
-  <!-- Footer -->
-  <footer class="text-center py-4">
-    <div class="container">
-      <p>Projekt zespołowy 2025 • Grupa XYZ</p>
-      <p>&copy; 2025 Wszystkie prawa zastrzeżone</p>
+  <!-- services -->
+
+
+  <!-- services end -->
+
+<!-- footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-section">
+        <h4 class="footer-title">EduBot Project</h4>
+        <p class="footer-text">Projekt zespołowy 2025 • Grupa XYZ</p>
+        <p class="footer-text">Wszystkie prawa zastrzeżone © 2025</p>
+      </div>
+
+      <div class="footer-section">
+        <h4 class="footer-title">Nawigacja</h4>
+       
+         <a class ="footer-text" href="#">Strona Główna</a>
+          <a class ="footer-text" href="/aboutproject.html">O Projekcie</a>
+       
+       
+      </div>
+
+      <div class="footer-section">
+        <h4 class="footer-title">Kontakt</h4>
+        <p class="footer-text">Email: kontakt@edubot.pl</p>
+        <p class="footer-text">Telefon: +48 123 456 789</p>
+      </div>
+
+      <div class="footer-section">
+        <h4 class="footer-title">Social Media</h4>
+        <div class="footer-socials">
+        
+          
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
     </div>
-  </footer>
+  </div>
+</footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- footer end -->
+  <script type="text/javascript" src="./js/script.js"></script>
+  <script type="text/javascript" src="./js/cursor.js"></script>
 </body>
 </html>

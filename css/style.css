@@ -3,24 +3,27 @@
 * https://fonts.google.com/
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 
 * {
 	margin: 10;
 	padding: 0;
 	color: var(--secondary);
-	font-size: 16px;
-	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	font-family: 'poppins' sans-serif !important; 
 	box-sizing: border-box;
-	text-decoration: none;
+	
 }
 
 html, body {
 	scroll-behavior: smooth;
+
+
 }
 
 body {
 	background-color: var(--primary);
+	
 }
 
 body.on {
@@ -48,13 +51,14 @@ body.on {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 400px; /* Задали повну висоту картки */
+  /* height: 400px;  <- прибери або адаптуй */
+  min-height: 400px;
   justify-content: flex-start;
 }
 
 .developer-img {
   width: 100%;
-  height: 300px; /* Висота зображення */
+  height: 250px; /* зменшено з 300px */
   object-fit: cover;
   border-radius: 12px;
   margin-bottom: 15px;
@@ -66,13 +70,17 @@ body.on {
   color: #fff;
   display: block;
   margin-bottom: 6px;
+  text-align: center;
+  word-wrap: break-word;
 }
 
 .dev-role {
   color: #bbb;
-  font-size: 16px;
+  font-size: 15px; /* трішки менше */
+  text-align: center;
+  padding: 0 10px;
+  word-wrap: break-word;
 }
-
 
 
 .btn {
