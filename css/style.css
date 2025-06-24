@@ -518,7 +518,10 @@ body.on {
   .dev-team-desktop {
     display: none;
   }
-
+.developer-card {
+  min-width: 80%;
+  box-sizing: border-box;
+}
   .dev-team-mobile {
     display: block;
     overflow: hidden;
