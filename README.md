@@ -69,3 +69,4 @@ git push
 - Osoba 4 — Oleksandr Mozel
 - Osoba 5 — Oleksii Mykhailyk
 - Osoba 6 — Pavlo Cherednyk
+"# mimao" 
