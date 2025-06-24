@@ -70,3 +70,4 @@ git push
 - Osoba 5 — Oleksii Mykhailyk
 - Osoba 6 — Pavlo Cherednyk
 "# mimao" 
+# mimao
