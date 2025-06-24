@@ -71,3 +71,4 @@ git push
 - Osoba 6 — Pavlo Cherednyk
 "# mimao" 
 # mimao
+# mimao
